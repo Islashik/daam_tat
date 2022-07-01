@@ -1,1 +1,7 @@
 __init__.py
+backend/config/__pycache__/
+backend/db.sqlite3
+backend/apps/food/__pycache__/
+backend/__pycache__/
+backend/apps/__pycache__/
+backend/apps/accounts/__pycache__/
