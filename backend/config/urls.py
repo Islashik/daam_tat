@@ -24,6 +24,7 @@ urlpatterns = [
     path('', include('backend.apps.food.urls')),
     path('ckeditor/', include('ckeditor_uploader.urls')),
     path('accounts/', include('backend.apps.accounts.urls')),
+    path('orders', include('backend.apps.orders.urls'))
 ]
 
 

@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
+
 {% for product in products %}
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="product-box mb-md-20">
@@ -13,7 +14,7 @@
                             <h6 class="product-title"><a href="restaurant.html" class="text-light-black "> {{product.name}}</a></h6>
                             <p class="text-light-white">{{product.price}} сом</p>
                             <div class="product-btn">
-                                <a href="order-details.html" class="btn-first white-btn full-width text-light-green fw-600">Подробнее</a>
+                                <a href="{% url 'food_detail' product.id %}" class="btn-first white-btn full-width text-light-green fw-600">Подробнее</a>
                             </div>
                         </div>
                     </div>

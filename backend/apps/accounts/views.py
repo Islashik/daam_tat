@@ -22,25 +22,13 @@ class LoginView(FormView):
                 return redirect('index')
             else:
                 return HttpResponse('Ваш аккаунт неактивен')
-        return HttpResponse('Такого юзера не существует')
+        return HttpResponse('Такого пользователя не существует')
 
 
 class UserRegisterView(CreateView):
     template_name = "register.html"
     form_class = UserRegisterForm
-
-    def form_valid(self, form):
-        user = form.save()
-        if user is not None:
-            login(self.request, user)
-            return redirect('index')
-        return super(UserRegisterView, self).form_valid(form)
-
-    def get(self, *args, **kwargs):
-        if self.request.user.is_authenticated:
-            return redirect('index')
-        return super(UserRegisterView, self).get(*args, **kwargs)
-
+    success_url = 'food/templates/index.html'
 
 
 class RegisterDoneView(TemplateView):

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- munchbox/register.html  05 Dec 2019 10:25:15 GMT -->
+<head>
+  {% load static %}
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="keywords" content="#">
+  <meta name="description" content="#">
+  <title>Munchbox | Register</title>
+  <!-- Fav and touch icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="#">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="#">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="#">
+  <link rel="apple-touch-icon-precomposed" href="#">
+  <link rel="shortcut icon" href="#">
+  <!-- Bootstrap -->
+  <link href="{% static 'assets/css/bootstrap.min.css' %}" rel="stylesheet">
+  <!-- Fontawesome -->
+  <link href="{% static 'assets/css/font-awesome.css' %}" rel="stylesheet">
+  <!-- Flaticons -->
+  <link href="{% static 'assets/css/font/flaticon.css' %}" rel="stylesheet">
+  <!-- Swiper Slider -->
+  <link href="{% static 'assets/css/swiper.min.css' %}" rel="stylesheet">
+  <!-- Range Slider -->
+  <link href="{% static 'assets/css/ion.rangeSlider.min.css' %}" rel="stylesheet">
+  <!-- magnific popup -->
+  <link href="{% static 'assets/css/magnific-popup.css' %}" rel="stylesheet">
+  <!-- Nice Select -->
+  <link href="{% static 'assets/css/nice-select.css' %}" rel="stylesheet">
+  <!-- Custom Stylesheet -->
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+  <!-- Custom Responsive -->
+  <link href="{% static 'assets/css/responsive.css' %}" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&amp;display=swap" rel="stylesheet">
+  <!-- place -->
+</head>
+
+<body>
+  <div class="inner-wrapper">
+    <div class="container-fluid no-padding">
+      <div class="row no-gutters overflow-auto">
+        <div class="col-md-6">
+          <div class="main-banner">
+            <img src="{% static 'assets/images/banner/banner-1.jpg' %}" class="img-fluid full-width main-img" alt="banner">
+            <div class="overlay-2 main-padding">
+              <img src="{% static 'assets/images/logo-2.jpg' %}" class="img-fluid" alt="logo">
+            </div>
+            <img src="{% static 'assets/images/banner/burger.png' %}" class="footer-img" alt="footer-img">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="section-2 user-page main-padding">
+            <div class="login-sec">
+              <div class="login-box">
+                <form>
+                 {% block content %}
+
+                  {% endblock %}
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Place all Scripts Here -->
+  <!-- jQuery -->
+  <script src="{% static 'assets/js/jquery.min.js' %}"></script>
+  <!-- Popper -->
+  <script src="{% static 'assets/js/popper.min.js' %}"></script>
+  <!-- Bootstrap -->
+  <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+  <!-- Range Slider -->
+  <script src="{% static 'assets/js/ion.rangeSlider.min.js' %}"></script>
+  <!-- Swiper Slider -->
+  <script src="{% static 'assets/js/swiper.min.js' %}"></script>
+  <!-- Nice Select -->
+  <script src="{% static 'assets/js/jquery.nice-select.min.js' %}"></script>
+  <!-- magnific popup -->
+  <script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
+  <!-- Maps -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnd9JwZvXty-1gHZihMoFhJtCXmHfeRQg"></script>
+  <!-- sticky sidebar -->
+  <script src="{% static 'assets/js/sticksy.js' %}"></script>
+  <!-- Munch Box Js -->
+  <script src="{% static 'assets/js/munchbox.js' %}"></script>
+  <!-- /Place all Scripts Here -->
+</body>
+
+
+<!-- munchbox/register.html  05 Dec 2019 10:25:15 GMT -->
+</html>

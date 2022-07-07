@@ -66,17 +66,11 @@
                                     </div>
                                     <!-- location picker -->
                                     <!-- search -->
-                                    <div style="width: 30%;" class="my-2 my-md-0 flex-grow-1 flex-md-grow-0 order-first order-md-last">
-                                        <form action="{% url 'searcher' %}" method="get">
-                                          <div class="input-icon">
-                                            <span class="input-icon-addon">
-                                              <!-- Download SVG icon from http://tabler-icons.io/i/search -->
-                                              <!-- <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><circle cx="10" cy="10" r="7" /><line x1="21" y1="21" x2="15" y2="15" /></svg> -->
-                                            </span>
-                                            <input name="query" type="text" value="" class="form-control" placeholder="Найти" aria-label="Search in website">
-                                          </div>
-                                        </form>
-                                      </div>
+                                    <div class="col-lg-6 col-md-7">
+                                        <div class="search-box padding-10">
+                                            <input type="text" class="form-control" placeholder="Pizza, Burger, Chinese">
+                                        </div>
+                                    </div>
                                     <!-- search -->
                                 </div>
                             </form>
@@ -84,11 +78,13 @@
                         <div class="right-side fw-700 mainNavCol">
                             <div class="gem-points">
                                 <a href="#"> <i class="fas fa-concierge-bell"></i>
-                                    <span>Заказать сейчас</span>
+                                    <span>Заказать сейчасf</span>
                                 </a>
                             </div>
                             <div class="catring parent-megamenu">
-
+                                <a href="#"> <span>Pages <i class="fas fa-caret-down"></i></span>
+                                    <i class="fas fa-bars"></i>
+                                </a>
                                 <div class="megamenu">
                                     <div class="row">
                                         <div class="col-sm-12">
@@ -326,87 +322,14 @@
         </header>
     </div>
     <div class="main-sec"></div>
-    <!-- Navigation -->
-	 <!-- slider -->
-    <section class="about-us-slider swiper-container p-relative">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide slide-item">
-                <img src="{% static 'assets/images/cheeseburger2.jpg' %}" class="img-fluid full-width" alt="Banner">
-                <div class="transform-center">
-                    <div class="container">
-                        <div class="row justify-content-start">
-                            <div class="col-lg-7 align-self-center">
-                                <div class="right-side-content">
-                                    <h1 class="text-custom-white fw-600">Горячие скидки на чизбургер 50%</h1>
-                                    <h3 class="text-custom-white fw-400">90 сом</h3>
-                                    <a href="{% url 'food_list' %}" class="btn-second btn-submit">Посмотреть меню</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="overlay overlay-bg"></div>
-            </div>
-            <div class="swiper-slide slide-item">
-                <img src="{% static 'assets/images/pide.jpg' %}" class="img-fluid full-width" alt="Banner">
-                <div class="transform-center">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8 align-self-center">
-                                <div class="right-side-content text-center">
-                                    <h1 class="text-custom-white fw-600">Скидка на Пиде 30%</h1>
-                                    <h3 class="text-custom-white fw-400">350 сом</h3>
-                                    <a href="{% url 'food_list' %}" class="btn-second btn-submit">Посмотреть меню</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="overlay overlay-bg"></div>
-            </div>
-            <div class="swiper-slide slide-item">
-                <img src="{% static 'assets/images/fries.jpg' %}" class="img-fluid full-width" alt="Banner">
-                <div class="transform-center">
-                    <div class="container">
-                        <div class="row justify-content-end">
-                            <div class="col-lg-7 align-self-center">
-                                <div class="right-side-content text-right">
-                                    <h1 class="text-custom-white fw-600">Скидка на картошку фри 50%</h1>
-                                    <h3 class="text-custom-white fw-400">150 сом</h3>
-                                    <a href="{% url 'food_list' %}" class="btn-second btn-submit">Посмотреть меню</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="overlay overlay-bg"></div>
-            </div>
+    <div>
+    <img src="{{product.image.url}}" alt="" width="300">
+        <div class="info" style="width:-100%;display:flex;justify-content:flex-end">
+    <h4>Цена: {{product.price}} сом</h4>
+        <a href="#" class="btn btn-bitbucket w-15"><i class="ti ti-shopping-cart"></i>Заказать</a>
+    </div>
+    <p>Описание: {{product.description|safe}}</p>
         </div>
-        <!-- Add Arrows -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-    </section>
-    <!-- slider -->
-    <!-- Browse by category -->
-
-    <!-- Browse by category -->
-    <!-- your previous order -->
-    <section class="recent-order section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-header-left">
-                        <h3 class="text-light-black header-title title">Меню<span class="fs-14"><a href="{% url 'food_list' %}">Посмотреть меню</a></span></h3>
-                    </div>
-                </div>
-                {% block content %}
-
-                {% endblock %}
-            </div>
-        </div>
-    </section>
-    <!-- your previous order -->
-    <!-- Explore collection -->
 
     <div class="footer-top section-padding bg-black">
         <div class="container-fluid">
