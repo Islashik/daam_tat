@@ -73,7 +73,7 @@
                                               <!-- Download SVG icon from http://tabler-icons.io/i/search -->
                                               <!-- <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><circle cx="10" cy="10" r="7" /><line x1="21" y1="21" x2="15" y2="15" /></svg> -->
                                             </span>
-                                            <input name="query" type="text" value="" class="form-control" placeholder="Найти" aria-label="Search in website">
+
                                           </div>
                                         </form>
                                       </div>
@@ -83,8 +83,7 @@
                         </div>
                         <div class="right-side fw-700 mainNavCol">
                             <div class="gem-points">
-                                <a href="#"> <i class="fas fa-concierge-bell"></i>
-                                    <span>Заказать сейчас</span>
+
                                 </a>
                             </div>
                             <div class="catring parent-megamenu">
@@ -195,111 +194,15 @@
                             <!-- user account -->
                             <div class="user-details p-relative">
                                 <span class="navbar-text">
-                                    <a href="{% url 'register' %}">Регистрация</a> | <a href="% url 'sign_in' %">Авторизация</a>
+                                    <a href="{% url 'register' %}">Регистрация</a> | <a href="{% url 'sign_in' %}">Авторизация</a>
                                 </span>
                             </div>
                             <!-- mobile search -->
                             <!-- user notification -->
-                            <div class="cart-btn notification-btn">
-                                <a href="#" class="text-light-green fw-700"> <i class="fas fa-bell"></i>
-                                    <span class="user-alert-notification"></span>
-                                </a>
-                                <div class="notification-dropdown">
-                                    <div class="product-detail">
-                                        <a href="#">
-                                            <div class="img-box">
-                                                <img src="{% static 'assets/images/shop-1.png' %}" class="rounded" alt="image">
-                                            </div>
-                                            <div class="product-about">
-                                                <p class="text-light-black">Lil Johnny’s</p>
-                                                <p class="text-light-white">Spicy Maxican Grill</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="rating-box">
-                                        <p class="text-light-black">How was your last order ?.</p> <span class="text-dark-white"><i class="fas fa-star"></i></span>
-                                        <span class="text-dark-white"><i class="fas fa-star"></i></span>
-                                        <span class="text-dark-white"><i class="fas fa-star"></i></span>
-                                        <span class="text-dark-white"><i class="fas fa-star"></i></span>
-                                        <span class="text-dark-white"><i class="fas fa-star"></i></span>
-                                        <cite class="text-light-white">Ordered 2 days ago</cite>
-                                    </div>
-                                </div>
-                            </div>
+
                             <!-- user notification -->
                             <!-- user cart -->
-                            <div class="cart-btn cart-dropdown">
-                                <a href="#" class="text-light-green fw-700"> <i class="fas fa-shopping-bag"></i>
-                                    <span class="user-alert-cart">3</span>
-                                </a>
-                                <div class="cart-detail-box">
-                                    <div class="card">
-                                        <div class="card-header padding-15">Your Order</div>
-                                        <div class="card-body no-padding">
-                                            <div class="cat-product-box">
-                                                <div class="cat-product">
-                                                    <div class="cat-name">
-                                                        <a href="#">
-                                                            <p class="text-light-green"><span class="text-dark-white">1</span>{{product.name}}</p> <span class="text-light-white">small, chilli chicken</span>
-                                                        </a>
-                                                    </div>
-                                                    <div class="delete-btn">
-                                                        <a href="#" class="text-dark-white"> <i class="far fa-trash-alt"></i>
-                                                        </a>
-                                                    </div>
-                                                    <div class="price"> <a href="#" class="text-dark-white fw-500">
-                              $2.25
-                            </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="cart-product-box">
-                                                <div class="cat-product">
-                                                    <div class="cat-name">
-                                                        <a href="#">
-                                                            <p class="text-light-green"><span class="text-dark-white">1</span> loaded cheese</p> <span class="text-light-white">small, chilli chicken</span>
-                                                        </a>
-                                                    </div>
-                                                    <div class="delete-btn">
-                                                        <a href="#" class="text-dark-white"> <i class="far fa-trash-alt"></i>
-                                                        </a>
-                                                    </div>
-                                                    <div class="price"> <a href="#" class="text-dark-white fw-500">
-                              $2.25
-                            </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="cat-product-box">
-                                                <div class="cat-product">
-                                                    <div class="cat-name">
-                                                        <a href="#">
-                                                            <p class="text-light-green"><span class="text-dark-white">1</span> Tortia Chicken</p> <span class="text-light-white">small, chilli chicken</span>
-                                                        </a>
-                                                    </div>
-                                                    <div class="delete-btn">
-                                                        <a href="#" class="text-dark-white"> <i class="far fa-trash-alt"></i>
-                                                        </a>
-                                                    </div>
-                                                    <div class="price"> <a href="#" class="text-dark-white fw-500">
-                              $2.25
-                            </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="item-total">
-                                                <div class="total-price border-0"> <span class="text-dark-white fw-700">Items subtotal:</span>
-                                                    <span class="text-dark-white fw-700">$9.99</span>
-                                                </div>
-                                                <div class="empty-bag padding-15"> <a href="#">Empty bag</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card-footer padding-15"> <a href="checkout.html" class="btn-first green-btn text-custom-white full-width fw-500">Proceed to Checkout</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+
                             <!-- user cart -->
                         </div>
                     </div>
@@ -413,32 +316,32 @@
             <div class="row">
                 <div class="col-md-2 col-sm-4 col-6 mb-sm-20">
                     <div class="icon-box"> <span class="text-light-green"><i class="flaticon-credit-card-1"></i></span>
-                        <span class="text-custom-white">100% Payment<br>Secured</span>
+                        <span class="text-custom-white">100% безопасная<br> оплата </span>
                     </div>
                 </div>
                 <div class="col-md-2 col-sm-4 col-6 mb-sm-20">
                     <div class="icon-box"> <span class="text-light-green"><i class="flaticon-wallet-1"></i></span>
-                        <span class="text-custom-white">Support lots<br> of Payments</span>
+                        <span class="text-custom-white">Много вариантов<br> оплаты</span>
                     </div>
                 </div>
                 <div class="col-md-2 col-sm-4 col-6 mb-sm-20">
                     <div class="icon-box"> <span class="text-light-green"><i class="flaticon-help"></i></span>
-                        <span class="text-custom-white">24 hours / 7 days<br>Support</span>
+                        <span class="text-custom-white">Служба поддержки<br> 24/7</span>
                     </div>
                 </div>
                 <div class="col-md-2 col-sm-4 col-6">
                     <div class="icon-box"> <span class="text-light-green"><i class="flaticon-truck"></i></span>
-                        <span class="text-custom-white">Free Delivery<br>with $50</span>
+                        <span class="text-custom-white">Бесплатная доставка<br> от заказа с суммой 50$</span>
                     </div>
                 </div>
                 <div class="col-md-2 col-sm-4 col-6">
                     <div class="icon-box"> <span class="text-light-green"><i class="flaticon-guarantee"></i></span>
-                        <span class="text-custom-white">Best Price<br>Guaranteed</span>
+                        <span class="text-custom-white">Лучшая<br> Цена</span>
                     </div>
                 </div>
                 <div class="col-md-2 col-sm-4 col-6">
                     <div class="icon-box"> <span class="text-light-green"><i class="flaticon-app-file-symbol"></i></span>
-                        <span class="text-custom-white">Mobile Apps<br>Ready</span>
+                        <span class="text-custom-white">Быстрая доставка<br> по городу</span>
                     </div>
                 </div>
             </div>
@@ -450,11 +353,9 @@
                 <li class="swiper-slide">
                     <a href="#"><img src="{% static 'assets/images/restaurants/250x200/insta-3.jpg' %}" alt="instagram"></a>
                 </li>
+
                 <li class="swiper-slide">
-                    <a href="#"><img src="{% static 'assets/images/restaurants/250x200/insta-1.jpg' %}" alt="instagram"></a>
-                </li>
-                <li class="swiper-slide">
-                    <a href="#"><img src="{% static 'assets/images/restaurants/250x200/insta-2.jpg' %}" alt="instagram"></a>
+                    <a href="#"><img src="{% static 'assets/images/fries.jpg' %}" alt="instagram"></a>
                 </li>
                 <li class="swiper-slide">
                     <a href="#"><img src="{% static 'assets/images/restaurants/250x200/insta-4.jpg' %}" alt="instagram"></a>
@@ -463,135 +364,26 @@
                     <a href="#"><img src="{% static 'assets/images/restaurants/250x200/insta-5.jpg' %}" alt="instagram"></a>
                 </li>
                 <li class="swiper-slide">
-                    <a href="#"><img src="{% static 'assets/images/restaurants/250x200/insta-6.jpg' %}" alt="instagram"></a>
+                    <a href="#"><img src="{% static 'assets/images/doner.jpeg' %}" alt="instagram"></a>
                 </li>
                 <li class="swiper-slide">
-                    <a href="#"><img src="{% static 'assets/images/restaurants/250x200/insta-7.jpg' %}" alt="instagram"></a>
+                    <a href="#"><img src="{% static 'assets/images/shaurma.jpg' %}" alt="instagram"></a>
                 </li>
                 <li class="swiper-slide">
-                    <a href="#"><img src="{% static 'assets/images/restaurants/250x200/insta-8.jpg' %}" alt="instagram"></a>
+                    <a href="#"><img src="{% static 'assets/images/pizza.jpg' %}" alt="instagram"></a>
                 </li>
             </ul>
         </div>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-xl col-lg-4 col-md-4 col-sm-6">
-                    <div class="footer-contact">
-                        <h6 class="text-custom-white">Need Help</h6>
-                        <ul>
-                            <li class="fw-600"><span class="text-light-white">Call Us</span> <a href="tel:" class="text-custom-white">+(347) 123 456 789</a>
-                            </li>
-                            <li class="fw-600"><span class="text-light-white">Email Us</span> <a href="mailto:" class="text-custom-white">demo@domain.com</a>
-                            </li>
-                            <li class="fw-600"><span class="text-light-white">Join our twitter</span> <a href="#" class="text-custom-white">@munchbox</a>
-                            </li>
-                            <li class="fw-600"><span class="text-light-white">Join our instagram</span> <a href="#" class="text-custom-white">@munchbox</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl col-lg-4 col-md-4 col-sm-6">
-                    <div class="footer-links">
-                        <h6 class="text-custom-white">Get to Know Us</h6>
-                        <ul>
-                            <li><a href="#" class="text-light-white fw-600">About Us</a>
-                            </li>
-                            <li><a href="#" class="text-light-white fw-600">Blog</a>
-                            </li>
-                            <li><a href="#" class="text-light-white fw-600">Socialize</a>
-                            </li>
-                            <li><a href="#" class="text-light-white fw-600">Munchbox</a>
-                            </li>
-                            <li><a href="#" class="text-light-white fw-600">Perks</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl col-lg-4 col-md-4 col-sm-6">
-                    <div class="footer-links">
-                        <h6 class="text-custom-white">Let Us Help You</h6>
-                        <ul>
-                            <li><a href="#" class="text-light-white fw-600">Account Details</a>
-                            </li>
-                            <li><a href="#" class="text-light-white fw-600">Order History</a>
-                            </li>
-                            <li><a href="#" class="text-light-white fw-600">Find restaurant</a>
-                            </li>
-                            <li><a href="#" class="text-light-white fw-600">Login</a>
-                            </li>
-                            <li><a href="#" class="text-light-white fw-600">Track order</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl col-lg-4 col-md-4 col-sm-6">
-                    <div class="footer-links">
-                        <h6 class="text-custom-white">Doing Business</h6>
-                        <ul>
-                            <li><a href="#" class="text-light-white fw-600">Suggest an Idea</a>
-                            </li>
-                            <li><a href="#" class="text-light-white fw-600">Be a Partner restaurant</a>
-                            </li>
-                            <li><a href="#" class="text-light-white fw-600">Create an Account</a>
-                            </li>
-                            <li><a href="#" class="text-light-white fw-600">Help</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl col-lg-4 col-md-4 col-sm-6">
-                    <div class="footer-links">
-                        <h6 class="text-custom-white">Download Apps</h6>
-                        <div class="appimg">
-                            <a href="#">
-                                <img src="{% static 'assets/images/playstore.jpg' %}" class="img-fluid" alt="app logo">
-                            </a>
-                        </div>
-                        <div class="appimg">
-                            <a href="#">
-                                <img src="{% static 'assets/images/appstore.jpg' %}" class="img-fluid" alt="app logo">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl col-lg-4 col-md-4 col-sm-6">
-                    <div class="footer-contact">
-                        <h6 class="text-custom-white">Newsletter</h6>
-                        <form class="subscribe_form">
-                            <div class="input-group">
-                                <input type="text" class="form-control form-control-submit" name="email" placeholder="Enter your email">
-                                <span class="input-group-btn">
-                      <button class="btn btn-second btn-submit" type="button"><i class="fas fa-paper-plane"></i></button>
-                 </span>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="ft-social-media">
-                        <h6 class="text-center text-light-black">Follow us</h6>
-                        <ul>
-                            <li> <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            </li>
-                            <li> <a href="#"><i class="fab fa-twitter"></i></a>
-                            </li>
-                            <li> <a href="#"><i class="fab fa-instagram"></i></a>
-                            </li>
-                            <li> <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                            </li>
-                            <li> <a href="#"><i class="fab fa-youtube"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </footer>
     <div class="copyright bg-black">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-4">
-                    <div class="payment-logo mb-md-20"> <span class="text-light-white fs-14 mr-3">We are accept</span>
+                    <div class="payment-logo mb-md-20"> <span class="text-light-white fs-14 mr-3">Мы принимаем</span>
                         <div class="payemt-icon">
                             <img src="{% static 'assets/images/card-front.jpg' %}" alt="#">
                             <img src="{% static 'assets/images/visa.jpg' %}" alt="#">
@@ -603,10 +395,7 @@
                 <div class="col-lg-4 text-center medewithlove align-self-center">
 
                 </div>
-                <div class="col-lg-4">
-                    <div class="copyright-text"> <span class="text-light-white"><a href="templateshub.net">Templates Hub</a> </span>
-                    </div>
-                </div>
+
             </div>
         </div>
     </div>

@@ -1,0 +1,27 @@
+{% extends 'base_register.html'%}
+{% load static %}
+{% block content %}
+
+<form method="post">
+    {% csrf_token %}
+    {% if form.errors %}
+    {% for field in form %}
+    {% for error in field.errors %}
+    <div class="alert alert-danger">
+        <strong>{{ error|escape }}</strong>
+    </div>
+    {% endfor %}
+    {% endfor %}
+    {% endif %}
+    <h4 class="text-light-black fw-600">Заказ</h4>
+    <input style="width:100%" class="user-input" type="text" placeholder="Имя"  />
+        <input style="width:100%" class="user-input" type="text" placeholder="Адрес дома"  />
+        <input style="width:100%" class="user-input" type="text" placeholder="Почтовый индекс"  />
+        <input style="width:100%" class="user-input" type="text" placeholder="Телефон"  />
+
+            <a class="btn btn-dark" href="{% url 'index' %}" role="button">Сделать заказ</a>
+    </div>
+
+
+</form>
+{% endblock %}

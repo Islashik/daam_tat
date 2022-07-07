@@ -28,7 +28,7 @@ class LoginView(FormView):
 class UserRegisterView(CreateView):
     template_name = "register.html"
     form_class = UserRegisterForm
-    success_url = 'food/templates/index.html'
+    success_url = reverse_lazy('index.html')
 
 
 class RegisterDoneView(TemplateView):

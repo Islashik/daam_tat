@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'ckeditor',
 
     'backend.apps.food',
-    'backend.apps.accounts'
+    'backend.apps.accounts',
+    'backend.apps.orders'
 ]
 
 CKEDITOR_UPLOAD_PATH = "uploads/"
